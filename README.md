@@ -1,6 +1,8 @@
-# Raylib Project Template (VS2022)
+# Marching Squares
 
-This simple C++/raylib project sets up a Visual Studio 2022 environment with all the necessary dependencies, including automatic downloading and linking.
+A simple C++/raylib implementation of the Marching Squares algorithm, based on [Jamie Wong's article](https://jamie-wong.com/2014/08/19/metaballs-and-marching-squares/)
+
+![Marching Squares Demo](demo.gif)
 
 ## Requirements
 - [Visual Studio 2022](https://visualstudio.com) (Not strictly required, but the included setup scripts support this version)
@@ -21,17 +23,6 @@ This simple C++/raylib project sets up a Visual Studio 2022 environment with all
    - A Makefile will be generated.
    - Build using: `make`
    - Executable is generated here: `Binaries/<platform>/Dev/<game_name>`
-
-## Included
-- Example Code:
-  * `/Game/Source` - Directory contains an example game implementation.
-  * `/Game/Resource`
-- `/Dependencies` directory for all game dependencies:
-  * `./Build-Dependencies.lua` - Defines the setup order of dependencies.
-  * `./Build-Raylib.lua` - Includes the game engine (`Raylib v6.0`).
-  * Additional dependencies can be added similarly.
-- A simple `.gitignore` to exclude project files and binaries.
-- Premake binaries for Windows and Linux (`Premake v5.0-beta2`).
 
 ## License
 - The repository itself is licensed under the terms described in `LICENSE`.
