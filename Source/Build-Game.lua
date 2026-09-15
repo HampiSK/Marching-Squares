@@ -3,7 +3,7 @@
 -----------------------------
 
 local projectName = Global.name
-local projectPath = Global.gameDir .. "/Source"
+local projectPath = Global.gameDir
 
 -----------------------------
 -- Define Project

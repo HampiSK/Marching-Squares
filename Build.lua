@@ -12,11 +12,11 @@ Global = {}  -- Global data container
 Link = {}    -- Used for linking other projects
 
 -- Project name
-Global.name = "Game Name"
+Global.name = "Marching-Squares"
 
 -- Static directory paths
 Global.rootDir = Utils.normalizePath(os.getcwd())
-Global.gameDir = Utils.normalizePath(Global.rootDir .. "/Game")
+Global.gameDir = Utils.normalizePath(Global.rootDir .. "/Source")
 Global.binDir = Utils.normalizePath(Global.rootDir .. "/Binaries")
 Global.objDir = Utils.normalizePath(Global.rootDir .. "/Binaries/Intermediates")
 Global.depDir = Utils.normalizePath(Global.rootDir .. "/Dependencies")
@@ -71,4 +71,4 @@ workspace(Global.name)
       include (Global.depDir .. "/Build-Raylib.lua")
    group ""
 
-   include (Global.gameDir .. "/Source/Build-Game.lua")
+   include (Global.gameDir .. "/Build-Game.lua")
